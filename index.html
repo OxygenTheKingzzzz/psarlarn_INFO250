@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PsarLarn</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -37,7 +38,7 @@
         </nav>
       </div>
     </header>
-    <div class="opening-section">
+    <div class="opening-section" data-aos="zoom-in">
       <div class="main-page-description">
         <h1>Find Your Perfect <span class="highlight">Drive</span> Today</h1>
         <p>
@@ -49,12 +50,17 @@
         <a href="contact_page.html" class="btn get-touch-btn">Get in Touch</a>
         </div>
       </div>
-      <div class="opening-image">
+      <div data-aos="zoom-in">
+        <div class="opening-image">
         <img src="./image/porsche_911_opening.jpg" alt="porsche_911" />
       </div>
+      </div>
+      
     </div>
-
-    <div class="feature-cars">
+    <div data-aos="zoom-out-up">
+      
+    </div>
+    <div class="feature-cars" data-aos="zoom-in-up">
       <div class="feature-description">
         <h1>Featured Vehicle</h1>
         <p>
@@ -105,7 +111,7 @@
       </div>
     </div>
 
-    <div class="psarlarn-container">
+    <div class="psarlarn-container" data-aos="zoom-in-down">
       <div class="psarlarn-context">
         <h1>Why Choose PsarLarn</h1>
         <p>
@@ -153,7 +159,7 @@
       </div>
     </div>
 
-    <div class="visit-showroom">
+    <div class="visit-showroom" data-aos="zoom-in-up">
       <div class="showroom-context">
         <h2>Ready To Find Your Dream Car?</h2>
         <p>Visit our showroom today or browse our online inventory to discover the perfect vehicle for you.</p>
@@ -162,7 +168,7 @@
     </div>
 
     <footer>
-    <div class="container">
+    <div class="container" data-aos="fade-up">
       <div class="footer-content">
         <div class="footer-brand">
             <div class="logo-icon">
@@ -222,5 +228,10 @@
     </div>
   </footer>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
   </body>
 </html>
