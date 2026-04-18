@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cars</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header>
       <div class="container">
         <div class="header-content">
-          <nav>
+          <div class="header-logo">
             <span>Psar<span class="highlight">Larn</span></span>
+          </div>
+          <div class="header-right">
             <ul class="nav-links">
               <li><a href="index.html">Home</a></li>
               <li><a href="about_page.html">About</a></li>
@@ -19,16 +22,15 @@
               <li><a href="contact_page.html">Contact</a></li>
             </ul>
 
-            <div class="header-selection">
-              <button class="dark-mode" id="darkmode">Dark Mode</button>
-              <button class="mobile-btn" id="mobile-button">
-                <span></span>
-                <span></span>
-                <span></span>
-              </button>
-            </div>
-          </nav>
+            <button class="mobile-btn" id="mobile-button">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
         </div>
+
+        <!-- MOBILE MENU -->
         <nav class="mobile-navbar" id="mobileNav">
           <a href="index.html">Home</a>
           <a href="about_page.html">About</a>
@@ -38,11 +40,11 @@
       </div>
     </header>
     <main>
-      <div class="inventory">
+      <div class="inventory" data-aos="fade-up">
         <h1>Our Inventory</h1>
         <p>Discover quality vehicles at competitive prices</p>
       </div>
-      <div class="search-bar">
+      <div class="search-bar" data-aos="fade-up">
         <div class="search-group">
           <label>Brand</label>
           <select>
@@ -99,10 +101,10 @@
 
         <button class="search-btn">🔍 Search</button>
       </div>
-      <div class="cars-page">
-        <div class="car-container">
+      <div class="cars-page" data-aos="fade-up">
+        <div class="car-container" data-aos="fade-up">
           <!-- FEATURE CARS -->
-          <div class="feature-car">
+          <div class="feature-car" data-aos="fade-up" >
             <div class="car-image">
               <span class="badge">FEATURED</span>
               <img src="./image/bmw_m4_competition.jpg" alt="bmw" />
@@ -128,7 +130,7 @@
             </div>
           </div>
 
-          <div class="feature-car">
+          <div class="feature-car" data-aos="fade-up">
             <div class="car-image">
               <span class="badge">FEATURED</span>
               <img src="./image/mclaren_765lt.jpg" alt="765lt" />
@@ -154,7 +156,7 @@
             </div>
           </div>
 
-          <div class="feature-car">
+          <div class="feature-car" data-aos="fade-up">
             <div class="car-image">
               <span class="badge">FEATURED</span>
               <img src="./image/mercedes_amg_gt.jpg" alt="mercedes_gt" />
@@ -180,7 +182,7 @@
             </div>
           </div>
           <!-- NORMAL CARS -->
-          <div class="normal-car">
+          <div class="normal-car" data-aos="fade-up">
             <div class="car-image">
               <img src="./image/camry_2022.jpg" alt="camry" />
             </div>
@@ -205,7 +207,7 @@
             </div>
           </div>
 
-         <div class="normal-car">
+         <div class="normal-car" data-aos="fade-up">
             <div class="car-image">
               <img src="./image/range_rover.jpg" alt="range_rover" />
             </div>
@@ -230,7 +232,7 @@
             </div>
           </div>
 
-          <div class="normal-car">
+          <div class="normal-car" data-aos="fade-up">
             <div class="car-image">
               <img src="./image/raptor.jpg" alt="raptor"/>
             </div>
@@ -254,7 +256,7 @@
               </div>
             </div>
           </div>
-          <div class="normal-car">
+          <div class="normal-car" data-aos="fade-up">
             <div class="car-image">
               <img src="./image/aventador.jpg" alt="aventador" />
             </div>
@@ -278,7 +280,7 @@
               </div>
             </div>
           </div>
-          <div class="normal-car">
+          <div class="normal-car" data-aos="fade-up">
             <div class="car-image">
               <img src="./image/laferrari.jpg" alt="laferrari" />
             </div>
@@ -302,7 +304,7 @@
               </div>
             </div>
           </div>
-          <div class="normal-car">
+          <div class="normal-car" data-aos="fade-up">
             <div class="car-image">
               <img src="./image/huracan.jpg" alt="huracan" />
             </div>
@@ -330,7 +332,7 @@
           
     </main>
     <footer>
-      <div class="container">
+      <div class="container" data-aos="fade-up">
         <div class="footer-content">
           <div class="footer-brand">
             <div class="logo-icon">
@@ -394,5 +396,9 @@
       </div>
     </footer>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

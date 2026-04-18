@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mercedes AMG GT</title>
     <link rel="stylesheet" href="/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header>
       <div class="container">
         <div class="header-content">
-          <nav>
+          <div class="header-logo">
             <span>Psar<span class="highlight">Larn</span></span>
+          </div>
+          <div class="header-right">
             <ul class="nav-links">
               <li><a href="/index.html">Home</a></li>
               <li><a href="/about_page.html">About</a></li>
@@ -19,16 +22,15 @@
               <li><a href="/contact_page.html">Contact</a></li>
             </ul>
 
-            <div class="header-selection">
-              <button class="dark-mode" id="darkmode">Dark Mode</button>
-              <button class="mobile-btn" id="mobile-button">
-                <span></span>
-                <span></span>
-                <span></span>
-              </button>
-            </div>
-          </nav>
+            <button class="mobile-btn" id="mobile-button">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
         </div>
+
+        <!-- MOBILE MENU -->
         <nav class="mobile-navbar" id="mobileNav">
           <a href="/index.html">Home</a>
           <a href="/about_page.html">About</a>
@@ -38,25 +40,25 @@
       </div>
     </header>
     <main>
-      <div class="car-detail">
+      <div class="car-detail" data-aos="fade-up">
         <div class="car-detail-opening">
           <h2>Mercedes AMG GT</h2>
           <p>2021 • Automatic</p>
         </div>
       </div>
-      <div class="car-detail-container">
+      <div class="car-detail-container" data-aos="fade-up">
         <div class="car-detail-image">
           <img src="/image/mercedes_amg_gt.jpg" alt="amg_gt" />
         </div>
 
         <!-- RIGHT SIDE WRAPPER -->
-        <div class="car-detail-info">
+        <div class="car-detail-info" data-aos="fade-up">
           <div class="car-detail-model">
             <h2>Mercedes AMG GT</h2>
             <p>$150, 000</p>
           </div>
 
-          <div class="car-detail-specification">
+          <div class="car-detail-specification" data-aos="fade-up">
             <p>Specifications</p>
             <p>Engine: 4.0L Turbo</p>
             <p>Fuel: Petrol</p>
@@ -66,7 +68,7 @@
             <p>Drivetrain: RWD</p>
           </div>
 
-          <div class="car-detail-description">
+          <div class="car-detail-description" data-aos="fade-up">
             <h4>Description</h4>
             <p>The Mercedes-AMG GT is a high-performance sports car that combines striking design, powerful engineering, and everyday usability. Developed by AMG, Mercedes-Benz’s performance division, it delivers both luxury and thrilling driving dynamics.
 Under the hood, the AMG GT typically features a handcrafted 4.0-liter twin-turbocharged V8 engine, producing anywhere from around 469 horsepower in the base model to over 700 horsepower in more extreme variants like the Black Series. Paired with a responsive dual-clutch transmission, it offers rapid acceleration and a deep, aggressive exhaust note that defines the AMG experience.</p>
@@ -74,7 +76,7 @@ Under the hood, the AMG GT typically features a handcrafted 4.0-liter twin-turbo
       </div>
     </main>
     <footer>
-      <div class="container">
+      <div class="container" data-aos="fade-up">
         <div class="footer-content">
           <div class="footer-brand">
             <div class="logo-icon">
@@ -138,5 +140,9 @@ Under the hood, the AMG GT typically features a handcrafted 4.0-liter twin-turbo
       </div>
     </footer>
     <script src="/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lamborghini Huracan</title>
     <link rel="stylesheet" href="/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header>
       <div class="container">
         <div class="header-content">
-          <nav>
+          <div class="header-logo">
             <span>Psar<span class="highlight">Larn</span></span>
+          </div>
+
+          <div class="header-right">
             <ul class="nav-links">
               <li><a href="/index.html">Home</a></li>
               <li><a href="/about_page.html">About</a></li>
@@ -19,16 +23,15 @@
               <li><a href="/contact_page.html">Contact</a></li>
             </ul>
 
-            <div class="header-selection">
-              <button class="dark-mode" id="darkmode">Dark Mode</button>
-              <button class="mobile-btn" id="mobile-button">
-                <span></span>
-                <span></span>
-                <span></span>
-              </button>
-            </div>
-          </nav>
+            <button class="mobile-btn" id="mobile-button">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
         </div>
+
+        <!-- MOBILE MENU -->
         <nav class="mobile-navbar" id="mobileNav">
           <a href="/index.html">Home</a>
           <a href="/about_page.html">About</a>
@@ -37,26 +40,25 @@
         </nav>
       </div>
     </header>
-    <main>
-      <div class="car-detail">
+      <div class="car-detail" data-aos="fade-up">
         <div class="car-detail-opening">
           <h2>Lamborghini Huracan</h2>
           <p>2022 • Automatic</p>
         </div>
       </div>
-      <div class="car-detail-container">
+      <div class="car-detail-container" data-aos="fade-up">
         <div class="car-detail-image">
           <img src="/image/huracan.jpg" alt="huracan" />
         </div>
 
         <!-- RIGHT SIDE WRAPPER -->
-        <div class="car-detail-info">
+        <div class="car-detail-info" data-aos="fade-up">
           <div class="car-detail-model">
             <h2>Lamborghini Huracan</h2>
             <p>$242, 900</p>
           </div>
 
-          <div class="car-detail-specification">
+          <div class="car-detail-specification" data-aos="fade-up">
             <p>Specifications</p>
             <p>Engine: 5.2L Turbo</p>
             <p>Fuel: Petrol</p>
@@ -66,14 +68,14 @@
             <p>Drivetrain: AWD</p>
           </div>
 
-          <div class="car-detail-description">
+          <div class="car-detail-description" data-aos="fade-up">
             <h4>Description</h4>
             <p>The Lamborghini Huracán is a modern supercar known for its sharp design, naturally aspirated V10 engine, and thrilling driving experience. It sits in Lamborghini’s lineup as a more “everyday usable” supercar compared to the Aventador, while still delivering extreme performance.
 Power comes from a 5.2-liter naturally aspirated V10 engine that produces around 610 to 640 horsepower depending on the variant. This allows the Huracán to accelerate from 0 to 100 km/h in roughly 2.9 to 3.4 seconds, depending on the model and drivetrain (RWD or AWD).</p>
       </div>
     </main>
     <footer>
-      <div class="container">
+      <div class="container" data-aos="fade-up">
         <div class="footer-content">
           <div class="footer-brand">
             <div class="logo-icon">
@@ -137,5 +139,9 @@ Power comes from a 5.2-liter naturally aspirated V10 engine that produces around
       </div>
     </footer>
     <script src="/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

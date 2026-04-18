@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Toyota Camry</title>
     <link rel="stylesheet" href="/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header>
       <div class="container">
         <div class="header-content">
-          <nav>
+          
+          <div class="header-logo">
             <span>Psar<span class="highlight">Larn</span></span>
+          </div>
+
+          <div class="header-right">
             <ul class="nav-links">
               <li><a href="/index.html">Home</a></li>
               <li><a href="/about_page.html">About</a></li>
@@ -19,44 +24,43 @@
               <li><a href="/contact_page.html">Contact</a></li>
             </ul>
 
-            <div class="header-selection">
-              <button class="dark-mode" id="darkmode">Dark Mode</button>
-              <button class="mobile-btn" id="mobile-button">
-                <span></span>
-                <span></span>
-                <span></span>
-              </button>
-            </div>
-          </nav>
+            <button class="mobile-btn" id="mobile-button">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
         </div>
+
+        <!-- MOBILE MENU -->
         <nav class="mobile-navbar" id="mobileNav">
           <a href="/index.html">Home</a>
           <a href="/about_page.html">About</a>
-          <a href="/cars_page.html">Cars</a>
+          <a href=/cars_page.html">Cars</a>
           <a href="/contact_page.html">Contact</a>
         </nav>
       </div>
     </header>
     <main>
-      <div class="car-detail">
+      <div class="car-detail" data-aos="fade-up">
         <div class="car-detail-opening">
           <h2>Toyota Camry</h2>
           <p>2022 • Automatic</p>
         </div>
       </div>
-      <div class="car-detail-container">
+      <div class="car-detail-container" data-aos="fade-up">
         <div class="car-detail-image">
           <img src="/image/camry_2022.jpg" alt="camry" />
         </div>
 
         <!-- RIGHT SIDE WRAPPER -->
-        <div class="car-detail-info">
+        <div class="car-detail-info" data-aos="fade-up">
           <div class="car-detail-model">
             <h2>Toyota Camry</h2>
             <p>$45, 900</p>
           </div>
 
-          <div class="car-detail-specification">
+          <div class="car-detail-specification" data-aos="fade-up">
             <p>Specifications</p>
             <p>Engine: 2.5L</p>
             <p>Fuel: Petrol</p>
@@ -66,7 +70,7 @@
             <p>Drivetrain: FWD</p>
           </div>
 
-          <div class="car-detail-description">
+          <div class="car-detail-description" data-aos="fade-up">
             <h4>Description</h4>
             <p>The Toyota Camry is a reliable and comfortable mid-size sedan known for its practicality, efficiency, and long-lasting durability. It has become one of the most popular family cars worldwide thanks to its balance of performance, safety, and affordability.
 Under the hood, the Camry typically offers a choice between a fuel-efficient 4-cylinder engine and a more powerful V6, along with a hybrid option for even better fuel economy. The ride is smooth and quiet, making it ideal for daily commuting as well as long-distance driving.</p>
@@ -74,7 +78,7 @@ Under the hood, the Camry typically offers a choice between a fuel-efficient 4-c
       </div>
     </main>
     <footer>
-      <div class="container">
+      <div class="container" data-aos="fade-up">
         <div class="footer-content">
           <div class="footer-brand">
             <div class="logo-icon">
@@ -138,5 +142,9 @@ Under the hood, the Camry typically offers a choice between a fuel-efficient 4-c
       </div>
     </footer>
     <script src="/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header>
       <div class="container">
         <div class="header-content">
-          <nav>
+          <div class="header-logo">
             <span>Psar<span class="highlight">Larn</span></span>
+          </div>
+          <div class="header-right">
             <ul class="nav-links">
               <li><a href="index.html">Home</a></li>
               <li><a href="about_page.html">About</a></li>
@@ -19,16 +22,15 @@
               <li><a href="contact_page.html">Contact</a></li>
             </ul>
 
-            <div class="header-selection">
-              <button class="dark-mode" id="darkmode">Dark Mode</button>
-              <button class="mobile-btn" id="mobile-button">
-                <span></span>
-                <span></span>
-                <span></span>
-              </button>
-            </div>
-          </nav>
+            <button class="mobile-btn" id="mobile-button">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
         </div>
+
+        <!-- MOBILE MENU -->
         <nav class="mobile-navbar" id="mobileNav">
           <a href="index.html">Home</a>
           <a href="about_page.html">About</a>
@@ -38,11 +40,11 @@
       </div>
     </header>
     <main>
-      <div class="contact-open-section">
+      <div class="contact-open-section" data-aos="fade-up">
         <h1>Contact Us</h1>
         <p>Get in touch with us for inquiries or visit our showroom</p>
       </div>
-      <div class="contact-container">
+      <div class="contact-container" data-aos="fade-up">
         <div class="contact-message">
           <h3>Send Us a Message</h3>
           <p>
@@ -98,7 +100,7 @@
             <button class="contact-btn">Send Message</button>
           </a>
         </div>
-        <div class="contact-information">
+        <div class="contact-information" data-aos="fade-up">
           <h4>Visit Our Showroom</h4>
           <p>123 Sothearos Boulevard</p>
           <p>Phnom Penh, Cambodia</p>
@@ -123,7 +125,7 @@
           <p>Trade-in Consultation</p>
 
         </div>
-        <div class="contact-connect">
+        <div class="contact-connect" data-aos="fade-up">
           <h4>Connect With Us</h4>
           <a href="#">
             <button class="contact-facebook">Facebook</button>
@@ -135,7 +137,7 @@
             <button class="contact-insta">Instagram</button>
           </a>
         </div>
-        <div class="contact-map">
+        <div class="contact-map" data-aos="fade-up">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.773535094963!2d104.92087461480816!3d11.556667941082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109519d70b31d5f%3A0x9b59d96e6e12e82a!2sSothearos%20Blvd%2C%20Phnom%20Penh%2C%20Cambodia!5e0!3m2!1sen!2sus!4v1635000000000!5m2!1sen!2sus"
             allowfullscreen=""
@@ -147,7 +149,7 @@
       </div>
     </main>
     <footer>
-      <div class="container">
+      <div class="container" data-aos="fade-up">
         <div class="footer-content">
           <div class="footer-brand">
             <div class="logo-icon">
@@ -211,5 +213,9 @@
       </div>
     </footer>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

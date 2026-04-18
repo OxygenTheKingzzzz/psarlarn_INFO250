@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ford Ranger Raptor</title>
     <link rel="stylesheet" href="/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
+   <header>
       <div class="container">
         <div class="header-content">
-          <nav>
+          <div class="header-logo">
             <span>Psar<span class="highlight">Larn</span></span>
+          </div>
+          <div class="header-right">
             <ul class="nav-links">
               <li><a href="/index.html">Home</a></li>
               <li><a href="/about_page.html">About</a></li>
@@ -19,16 +22,15 @@
               <li><a href="/contact_page.html">Contact</a></li>
             </ul>
 
-            <div class="header-selection">
-              <button class="dark-mode" id="darkmode">Dark Mode</button>
-              <button class="mobile-btn" id="mobile-button">
-                <span></span>
-                <span></span>
-                <span></span>
-              </button>
-            </div>
-          </nav>
+            <button class="mobile-btn" id="mobile-button">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
         </div>
+
+        <!-- MOBILE MENU -->
         <nav class="mobile-navbar" id="mobileNav">
           <a href="/index.html">Home</a>
           <a href="/about_page.html">About</a>
@@ -38,25 +40,25 @@
       </div>
     </header>
     <main>
-      <div class="car-detail">
+      <div class="car-detail" data-aos="fade-up">
         <div class="car-detail-opening">
           <h2>Ford Ranger Raptor</h2>
           <p>2025 • Automatic</p>
         </div>
       </div>
-      <div class="car-detail-container">
+      <div class="car-detail-container" data-aos="fade-up">
         <div class="car-detail-image">
           <img src="/image/raptor.jpg" alt="raptor" />
         </div>
 
         <!-- RIGHT SIDE WRAPPER -->
-        <div class="car-detail-info">
+        <div class="car-detail-info" data-aos="fade-up">
           <div class="car-detail-model">
             <h2>Ford Ranger Raptor</h2>
             <p>$115, 700</p>
           </div>
 
-          <div class="car-detail-specification">
+          <div class="car-detail-specification" data-aos="fade-up">
             <p>Specifications</p>
             <p>Engine: 3.0L Turbo</p>
             <p>Fuel: Diesel</p>
@@ -66,14 +68,14 @@
             <p>Drivetrain: AWD</p>
           </div>
 
-          <div class="car-detail-description">
+          <div class="car-detail-description" data-aos="fade-up">
             <h4>Description</h4>
             <p>The Ford Ranger Raptor is a high-performance off-road pickup built for drivers who want both toughness and excitement. Developed by Ford Performance, it takes the standard Ranger to a whole new level with enhanced power, suspension, and aggressive styling.
 Under the hood, newer versions feature a 3.0-liter twin-turbocharged V6 engine producing around 392 horsepower, paired with a 10-speed automatic transmission.</p>
       </div>
     </main>
     <footer>
-      <div class="container">
+      <div class="container" data-aos="fade-up">
         <div class="footer-content">
           <div class="footer-brand">
             <div class="logo-icon">
@@ -137,5 +139,9 @@ Under the hood, newer versions feature a 3.0-liter twin-turbocharged V6 engine p
       </div>
     </footer>
     <script src="/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

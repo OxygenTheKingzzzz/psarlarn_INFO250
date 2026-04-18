@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About PsarLarn</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header>
       <div class="container">
         <div class="header-content">
-          <nav>
+          <div class="header-logo">
             <span>Psar<span class="highlight">Larn</span></span>
+          </div>
+
+          <div class="header-right">
             <ul class="nav-links">
               <li><a href="index.html">Home</a></li>
               <li><a href="about_page.html">About</a></li>
@@ -19,16 +23,15 @@
               <li><a href="contact_page.html">Contact</a></li>
             </ul>
 
-            <div class="header-selection">
-              <button class="dark-mode" id="darkmode">Dark Mode</button>
-              <button class="mobile-btn" id="mobile-button">
-                <span></span>
-                <span></span>
-                <span></span>
-              </button>
-            </div>
-          </nav>
+            <button class="mobile-btn" id="mobile-button">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
         </div>
+
+        <!-- MOBILE MENU -->
         <nav class="mobile-navbar" id="mobileNav">
           <a href="index.html">Home</a>
           <a href="about_page.html">About</a>
@@ -38,229 +41,255 @@
       </div>
     </header>
     <main>
-      <div class="about-section">
+      <div class="about-section" data-aos="fade-up">
         <div class="about-description">
           <h1>About PsarLarn</h1>
           <p>Your trusted partner in automotive excellence since 2016</p>
         </div>
       </div>
 
-      <div class="story-section">
+      <div class="story-section" data-aos="fade-up">
         <div class="story-image">
-          <img src="./image/about_us.jpg" alt="about_us">
+          <img src="./image/about_us.jpg" alt="about_us" />
         </div>
         <div class="story-description">
           <h1>Our Story</h1>
-          <p class="story-text"> PsarLarn was founded in 2016 with a simple mission: to make car buying in Cambodia transparent, trustworthy, and enjoyable. What started as a small showroom in Phnom Penh has grown into one of the country's most respected automotive dealerships.</p>
-          <p class="story-text">Over the years, we have helped thousands of Cambodian families find their perfect vehicles. Our commitment to quality, integrity, and customer satisfaction has earned us the trust of thousands of happy customers across the nation.</p>
-          <p class="story-text">We believe that everyone deserves access to reliable transportation, and we work tirelessly to offer a diverse range of vehicles to suit every budget and lifestyle. From compact sedans to spacious SUVs, we have something for everyone.</p>
-        </div>
-      </div>
-      <div class="core-value">
-  <div class="core-description">
-    <h1>Our Core Values</h1>
-    <p>These principles guide everything we do at PsarLarn</p>
-
-    <div class="value-keys">
-      
-      <!-- Card 1 -->
-      <div class="value-card">
-        <div class="value-logo">
-          <img src="./icons/shield.png" alt="Integrity">
-        </div>
-        <div class="value-context">
-          <h3>Integrity</h3>
-          <p>
-            We believe in complete transparency in all our dealings. 
-            No hidden fees, no surprises—just honest, straightforward service you can trust.
+          <p class="story-text">
+            PsarLarn was founded in 2016 with a simple mission: to make car
+            buying in Cambodia transparent, trustworthy, and enjoyable. What
+            started as a small showroom in Phnom Penh has grown into one of the
+            country's most respected automotive dealerships.
+          </p>
+          <p class="story-text">
+            Over the years, we have helped thousands of Cambodian families find
+            their perfect vehicles. Our commitment to quality, integrity, and
+            customer satisfaction has earned us the trust of thousands of happy
+            customers across the nation.
+          </p>
+          <p class="story-text">
+            We believe that everyone deserves access to reliable transportation,
+            and we work tirelessly to offer a diverse range of vehicles to suit
+            every budget and lifestyle. From compact sedans to spacious SUVs, we
+            have something for everyone.
           </p>
         </div>
       </div>
+      <div class="core-value" data-aos="fade-up">
+        <div class="core-description">
+          <h1>Our Core Values</h1>
+          <p>These principles guide everything we do at PsarLarn</p>
 
-      <!-- Card 2 -->
-      <div class="value-card">
-        <div class="value-logo">
-          <img src="./icons/customer.png" alt="Customers First">
+          <div class="value-keys">
+            <!-- Card 1 -->
+            <div class="value-card">
+              <div class="value-logo">
+                <img src="./icons/shield.png" alt="Integrity" />
+              </div>
+              <div class="value-context">
+                <h3>Integrity</h3>
+                <p>
+                  We believe in complete transparency in all our dealings. No
+                  hidden fees, no surprises—just honest, straightforward service
+                  you can trust.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="value-card">
+              <div class="value-logo">
+                <img src="./icons/customer.png" alt="Customers First" />
+              </div>
+              <div class="value-context">
+                <h3>Customers First</h3>
+                <p>
+                  Your satisfaction is our top priority. We listen to your needs
+                  and work tirelessly to find the perfect vehicle for you.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="value-card">
+              <div class="value-logo">
+                <img src="./icons/badge.png" alt="Excellence" />
+              </div>
+              <div class="value-context">
+                <h3>Excellence</h3>
+                <p>
+                  We continuously strive for excellence in everything we do,
+                  from our vehicles to the service and experience we provide.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="value-context">
-          <h3>Customers First</h3>
+      </div>
+
+      <div class="customers-feedback" data-aos="fade-up">
+        <div class="customers-description">
+          <h1>What Our Customers Say</h1>
           <p>
-            Your satisfaction is our top priority. We listen to your needs 
-            and work tirelessly to find the perfect vehicle for you.
+            Real stories from real customers who found their perfect vehicles
+            with us
           </p>
         </div>
-      </div>
 
-      <!-- Card 3 -->
-      <div class="value-card">
-        <div class="value-logo">
-          <img src="./icons/badge.png" alt="Excellence">
-        </div>
-        <div class="value-context">
-          <h3>Excellence</h3>
-          <p>
-            We continuously strive for excellence in everything we do, 
-            from our vehicles to the service and experience we provide.
-          </p>
-        </div>
-      </div>
+        <div class="feedback-content">
+          <!-- Card 1 -->
+          <div class="customer-comment-card">
+            <div class="stars">
+              <img src="./icons/star.png" />
+              <img src="./icons/star.png" />
+              <img src="./icons/star.png" />
+              <img src="./icons/star.png" />
+              <img src="./icons/star.png" />
+            </div>
 
-    </div>
-  </div>
-</div>
-      
-      <div class="customers-feedback">
-  <div class="customers-description">
-    <h1>What Our Customers Say</h1>
-    <p>Real stories from real customers who found their perfect vehicles with us</p>
-  </div>
+            <blockquote>
+              "Buying my first car was a smooth experience thanks to PsarLarn.
+              They helped me find the perfect car within my budget. "
+            </blockquote>
 
-  <div class="feedback-content">
+            <div class="customer-profile">
+              <img src="./image/business_man.jpg" />
+              <div>
+                <h3>Sok Dara</h3>
+                <p>Business Owner, Phnom Penh</p>
+              </div>
+            </div>
+          </div>
 
-    <!-- Card 1 -->
-    <div class="customer-comment-card">
-      <div class="stars">
-        <img src="./icons/star.png">
-        <img src="./icons/star.png">
-        <img src="./icons/star.png">
-        <img src="./icons/star.png">
-        <img src="./icons/star.png">
-      </div>
+          <!-- Card 2 -->
+          <div class="customer-comment-card">
+            <div class="stars">
+              <img src="./icons/star.png" />
+              <img src="./icons/star.png" />
+              <img src="./icons/star.png" />
+              <img src="./icons/star.png" />
+              <img src="./icons/star.png" />
+            </div>
 
-      <blockquote>
-        "Buying my first car was a smooth experience thanks to PsarLarn. 
-        They helped me find the perfect car within my budget. "
-      </blockquote>
+            <blockquote>
+              "I upgraded to an SUV for my family. PsarLarn had exactly what I
+              needed. Their after-sales service has been exceptional. "
+            </blockquote>
 
-      <div class="customer-profile">
-        <img src="./image/business_man.jpg">
-        <div>
-          <h3>Sok Dara</h3>
-          <p>Business Owner, Phnom Penh</p>
-        </div>
-      </div>
-    </div>
+            <div class="customer-profile">
+              <img src="./image/IT_manager.jpg" />
+              <div>
+                <h3>Phan Phal</h3>
+                <p>IT Manager, Battambang</p>
+              </div>
+            </div>
+          </div>
 
-    <!-- Card 2 -->
-    <div class="customer-comment-card">
-      <div class="stars">
-        <img src="./icons/star.png">
-        <img src="./icons/star.png">
-        <img src="./icons/star.png">
-        <img src="./icons/star.png">
-        <img src="./icons/star.png">
-      </div>
+          <!-- Card 3 -->
+          <div class="customer-comment-card">
+            <div class="stars">
+              <img src="./icons/star.png" />
+              <img src="./icons/star.png" />
+              <img src="./icons/star.png" />
+              <img src="./icons/star.png" />
+              <img src="./icons/star.png" />
+            </div>
 
-      <blockquote>
-        "I upgraded to an SUV for my family. PsarLarn had exactly what I needed. 
-        Their after-sales service has been exceptional. "
-      </blockquote>
+            <blockquote>
+              "The financing options made it possible for me to own a
+              Mercedes-Benz. Everything was clearly explained and stress-free. "
+            </blockquote>
 
-      <div class="customer-profile">
-        <img src="./image/IT_manager.jpg">
-        <div>
-          <h3>Phan Phal</h3>
-          <p>IT Manager, Battambang</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 3 -->
-    <div class="customer-comment-card">
-      <div class="stars">
-        <img src="./icons/star.png">
-        <img src="./icons/star.png">
-        <img src="./icons/star.png">
-        <img src="./icons/star.png">
-        <img src="./icons/star.png">
-      </div>
-
-      <blockquote>
-        "The financing options made it possible for me to own a Mercedes-Benz. 
-        Everything was clearly explained and stress-free. "
-      </blockquote>
-
-      <div class="customer-profile">
-        <img src="./image/marketing_director.jpg">
-        <div>
-          <h3>Neang Chantha</h3>
-          <p>Marketing Director, Siem Reap</p>
+            <div class="customer-profile">
+              <img src="./image/marketing_director.jpg" />
+              <div>
+                <h3>Neang Chantha</h3>
+                <p>Marketing Director, Siem Reap</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-
-  </div>
-</div>
     </main>
 
-    <div class="visit-showroom">
+    <div class="visit-showroom" data-aos="fade-up">
       <div class="showroom-context">
         <h2>Ready To Find Your Dream Car?</h2>
-        <p>Visit our showroom today or browse our online inventory to discover the perfect vehicle for you.</p>
+        <p>
+          Visit our showroom today or browse our online inventory to discover
+          the perfect vehicle for you.
+        </p>
       </div>
       <a href="./cars_page.html" class="explore-btn">Explore Our Inventory</a>
     </div>
 
     <footer>
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-brand">
+      <div class="container" data-aos="fade-up">
+        <div class="footer-content">
+          <div class="footer-brand">
             <div class="logo-icon">
               <span>Psar<span>Larn</span></span>
             </div>
-          <p>Your trusted partner for quality vehicles in Cambodia. We provide exceptional service and competitive prices for all your automotive needs.</p>
-          <div class="social-links">
-            <a href="#" class="social-link" aria-label="Facebook">
-              <img src="./icons/facebook-app-symbol.png" alt="facebook">
-            </a>
-            <a href="#" class="social-link" aria-label="Telegram">
-              <img src="./icons/telegram.png" alt="telegram">
-            </a>
-            <a href="#" class="social-link" aria-label="Instagram">
-              <img src="./icons/instagram.png" alt="ig">
-            </a>
+            <p>
+              Your trusted partner for quality vehicles in Cambodia. We provide
+              exceptional service and competitive prices for all your automotive
+              needs.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Facebook">
+                <img src="./icons/facebook-app-symbol.png" alt="facebook" />
+              </a>
+              <a href="#" class="social-link" aria-label="Telegram">
+                <img src="./icons/telegram.png" alt="telegram" />
+              </a>
+              <a href="#" class="social-link" aria-label="Instagram">
+                <img src="./icons/instagram.png" alt="ig" />
+              </a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="cars.html">Our Cars</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#">Car Sales</a></li>
+              <li><a href="#">Financing</a></li>
+              <li><a href="#">Maintenance</a></li>
+              <li><a href="#">Trade-In</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Contact Info</h4>
+            <ul>
+              <li>
+                <p>123 Sothearos Blvd</p>
+                <p>Phnom Penh, Cambodia</p>
+              </li>
+              <li>
+                <p>+855 12 345 678</p>
+              </li>
+              <li>
+                <p>info@psarlarn.com</p>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="footer-column">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="cars.html">Our Cars</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h4>Services</h4>
-          <ul>
-            <li><a href="#">Car Sales</a></li>
-            <li><a href="#">Financing</a></li>
-            <li><a href="#">Maintenance</a></li>
-            <li><a href="#">Trade-In</a></li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h4>Contact Info</h4>
-          <ul>
-            <li>
-              <p>123 Sothearos Blvd</p>
-              <p>Phnom Penh, Cambodia</p>
-            </li>
-            <li>
-              <p>+855 12 345 678</p>
-            </li>
-            <li>
-              <p>info@psarlarn.com</p>
-            </li>
-          </ul>
+        <div class="footer-bottom">
+          <hr />
+          <p>&copy; 2026 PsarLarn. All rights reserved.</p>
         </div>
       </div>
-      <div class="footer-bottom">
-        <hr>
-        <p>&copy; 2026 PsarLarn. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
+    </footer>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LaFerrari</title>
     <link rel="stylesheet" href="/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header>
       <div class="container">
         <div class="header-content">
-          <nav>
+          <div class="header-logo">
             <span>Psar<span class="highlight">Larn</span></span>
+          </div>
+          <div class="header-right">
             <ul class="nav-links">
               <li><a href="/index.html">Home</a></li>
               <li><a href="/about_page.html">About</a></li>
@@ -19,16 +22,15 @@
               <li><a href="/contact_page.html">Contact</a></li>
             </ul>
 
-            <div class="header-selection">
-              <button class="dark-mode" id="darkmode">Dark Mode</button>
-              <button class="mobile-btn" id="mobile-button">
-                <span></span>
-                <span></span>
-                <span></span>
-              </button>
-            </div>
-          </nav>
+            <button class="mobile-btn" id="mobile-button">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
         </div>
+
+        <!-- MOBILE MENU -->
         <nav class="mobile-navbar" id="mobileNav">
           <a href="/index.html">Home</a>
           <a href="/about_page.html">About</a>
@@ -38,25 +40,25 @@
       </div>
     </header>
     <main>
-      <div class="car-detail">
+      <div class="car-detail" data-aos="fade-up">
         <div class="car-detail-opening">
           <h2>LaFerrari</h2>
           <p>2021 • Automatic</p>
         </div>
       </div>
-      <div class="car-detail-container">
+      <div class="car-detail-container" data-aos="fade-up">
         <div class="car-detail-image">
           <img src="/image/laferrari.jpg" alt="laferrari" />
         </div>
 
         <!-- RIGHT SIDE WRAPPER -->
-        <div class="car-detail-info">
+        <div class="car-detail-info" data-aos="fade-up">
           <div class="car-detail-model">
             <h2>LaFerrari</h2>
             <p>$225, 200</p>
           </div>
 
-          <div class="car-detail-specification">
+          <div class="car-detail-specification" data-aos="fade-up">
             <p>Specifications</p>
             <p>Engine: 6.3L Turbo</p>
             <p>Fuel: Petrol</p>
@@ -66,14 +68,14 @@
             <p>Drivetrain: AWD</p>
           </div>
 
-          <div class="car-detail-description">
+          <div class="car-detail-description" data-aos="fade-up">
             <h4>Description</h4>
             <p>The LaFerrari is Ferrari’s flagship hybrid hypercar, designed to showcase the brand’s most advanced performance technology and engineering. It represents the peak of Ferrari’s road car lineup, combining extreme speed with hybrid innovation.
 At its core is a 6.3-liter naturally aspirated V12 engine paired with an electric motor (HY-KERS system), producing a combined output of around 950 horsepower.</p>
       </div>
     </main>
     <footer>
-      <div class="container">
+      <div class="container data-aos="fade-up">
         <div class="footer-content">
           <div class="footer-brand">
             <div class="logo-icon">
@@ -137,5 +139,9 @@ At its core is a 6.3-liter naturally aspirated V12 engine paired with an electri
       </div>
     </footer>
     <script src="/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
