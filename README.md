@@ -36,3 +36,4 @@ Psarlarn consists of 4 main pages:
 ## Languages Used 
 - HTML5 – structure and semantic layout
 - CSS3 – styling and design
+- JavaScript – adds interactivity and dynamic behavior to the website
